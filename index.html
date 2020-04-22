@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Mena_Tithe Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        body,
+        * {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        #result {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 mt-md-5 mt-sm-5">
+            <div class="card shadow pb-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Mena_Tithe</h5>
+                    <p class="card-text text-center">
+                        Wanna Pay Tithe but don't know how to calculate it?
+                        <br>
+                        <div class="text-center font-weight-bold">Mena Tithe Calculator got you covered</div>
+                    </p>
+
+                    <form>
+
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Enter Amount Received" id="profit" oninput="calculateTithe()">
+                        </div>
+                        <!-- 
+                    <div class="form-group">
+                        <select class="form-control" id="currency" onchange="Currency()">
+                            Currency
+                            <option>...</option>
+                            <option value="NGN">Nigeria</option>
+                            <option value="USD">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="Euro">England</option>
+
+                        </select>
+                    </div> -->
+
+                    </form>
+                    <div class="mt-1 w-100 mr-4 mr-4">
+                        <div id="result" class="text-center pt-5 pb-5 alert-success alert">Total Tithe To Pay Will Appear Here </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="fixed-bottom">
+
+        <div class="text-muted text-center"> &copy; 2020 Mena_Tithe Calculator</div>
+    </div>
+    <!-- Raw JavaScript -->
+    <script src="js/tithe.js"></script>
+</body>
+
+</html>
